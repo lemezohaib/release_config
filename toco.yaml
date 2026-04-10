@@ -1,0 +1,7 @@
+images:
+  - boot
+  - dtbo
+  - recovery
+
+build:
+  type: "user"

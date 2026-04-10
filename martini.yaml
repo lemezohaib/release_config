@@ -1,0 +1,8 @@
+images:
+  - boot
+  - dtbo
+  - vbmeta
+  - vendor_boot
+
+build:
+  type: "user"

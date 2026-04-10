@@ -1,0 +1,7 @@
+images:
+  - boot
+  - vendor_boot
+
+build:
+  type: user
+  upload_full_tf: true

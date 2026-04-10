@@ -1,0 +1,8 @@
+images:
+  - boot
+  - vendor_boot
+  - dtbo
+  - recovery
+  - init_boot
+  - vbmeta
+  - super_empty

@@ -1,0 +1,8 @@
+build:
+  type: "user"
+
+images:
+  - boot
+  - vendor_boot
+  - dtbo
+
