@@ -2,6 +2,7 @@
 
 import json
 import os
+import re
 from urllib.request import urlopen
 
 
@@ -38,6 +39,16 @@ def main():
     for name in sorted(set(current) - wanted):
         os.remove(f"{root}/{current[name]}")
         print(f"deleted {current[name]}")
+
+    for file_name in sorted(os.listdir(root)):
+        if not file_name.endswith(".yaml"):
+            continue
+
+        with open(f"{root}/{file_name}", "r") as f:
+            contents = f.read()
+
+        if re.search(r'^\s*type:\s*"?eng"?\s*$', contents, flags=re.MULTILINE):
+            raise Exception(f"{file_name} has eng build type, not allowed in release_config")
 
 
 if __name__ == "__main__":
