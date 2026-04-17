@@ -18,7 +18,7 @@ def main():
 
     wanted = set()
     for device in devices:
-        if device.get("active") is not True or device.get("version") != 16:
+        if device.get("active") is not True:
             continue
 
         codename = (device.get("codename") or "").strip()
