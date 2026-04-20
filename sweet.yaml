@@ -5,3 +5,7 @@ images:
 
 build:
   type: "user"
+
+picks:
+  # kernel/xiaomi/sm6150
+  - id: "ln8000"
